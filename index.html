@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Harryguci's Web</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/v4RRVvvb/code.png">
+    <script>
+        // find all <a> tags with class of 'image-link'
+        var links = document.querySelectorAll('a.image-link');
+
+        // loop through them all
+        for (var i = 0; i < links.length; i++) {
+            var link = links[i];
+            // listen for the click event
+            link.addEventListener('click', function () {
+                // on click, show the image using the URL from the data-url attribute
+                disp_img(link.data.url);
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="" id="TOP"></div>
+    <div class="goodbye" id="bye">
+        <!-- <div class="note center round-corner">
+            <span>Click It !!</span>
+        </div> -->
+        <span>Thank you, and goodbye !</span>
+        <div class="center">
+            <a href="https://www.youtube.com/watch?v=TKlXc3iywoM&list=RDTKlXc3iywoM&start_radio=1">
+                <img class="round-corner" src="mqdefault.jpg" alt=""
+                    style="width: 150px; height: auto; transform: translate(-5px,-150px);">
+            </a>
+        </div>
+    </div>
+
+    <div class="menu-bar" id="HeadMenu">
+        <div class="leftside">
+            <h1 id="harry">Harryguci</h1>
+            <!-- <img src="" alt="logo"> -->
+        </div>
+        <div class="rightside">
+            <a href="#HOME">Home</a>
+            <a href="#INTRO">Introduction</a>
+            <a href="#BLOG">Blogs</a>
+            <a href="#CONTACT">Contact</a>
+        </div>
+        <div class="exit-button">
+            <button type="button" onclick="document.getElementById('bye').style.opacity = '100%';
+            document.body.style.overflow = 'hidden';
+            document.getElementById('HeadMenu').style.top = '-100px';">
+                <a href="#TOP"><img src="exit_icon.png" alt=""></a>
+            </button>
+        </div>
+    </div>
+
+    <div id="HOME"></div>
+    <div class="container frame1 round-corner">
+        <img class="round-corner" src="186f49fd4aaa83f4dabb.jpg" alt="">
+        <div class="button0">
+            <a href="#" class="image-link" data-url="186f49fd4aaa83f4dabb.jpg"><img class="center"
+                    src="icon_fullscreen.png" alt=""></a>
+        </div>
+        <div class="circle">
+            <img src="https://i.postimg.cc/9fP8X1ZC/DSC-6956.jpg" alt="" style="top: -70px;">
+        </div>
+        <div class="button">
+            <a href="https://im.ge/i/rei0gW" alt=""><img class="center" src="icon_fullscreen.png" alt=""></a>
+        </div>
+    </div>
+    <div class="container self-information">
+        <h1>Quang_Huy</h1>
+        <span>08/07/2003</span>
+        <span></span>
+        <span>Ha Noi, Viet Nam</span>
+    </div>
+    <div id="INTRO"></div>
+    <div id="BLOG"></div>
+    <div class="main-content round-corner">
+        <div class="introduction round-corner shadow">
+            <h2>Introduction</h2>
+            <div class="list-intro">
+                <div class="item round-corner">
+                    <img src="" alt="">
+                    <span></span>
+                </div>
+                <div class="item round-corner">
+                    <img src="" alt="">
+                    <span></span>
+                </div>
+                <div class="item round-corner">
+                    <img src="" alt="">
+                    <span></span>
+                </div>
+                <div class="item round-corner">
+                    <img src="" alt="">
+                    <span></span>
+                </div>
+                <div class="item round-corner">
+                    <img src="" alt="">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div style="width: 40px;"></div>
+        <div class="newfeed round-corner shadow">
+            <h2>Blogs</h2>
+            <div class="list-feed">
+                <div class="item round-corner">
+                    <div class="head-feed">
+                        <div class="mini-avatar">
+                            <img src="https://i.postimg.cc/9fP8X1ZC/DSC-6956.jpg" alt="">
+                        </div>
+                        <div class="infor-post">
+                            <span class="name">@Quang_Huy</span>
+                            <div style="width: 100%; height: 0px;"></div>
+                            <span class="time-post">19/06/2022</span>
+                        </div>
+                    </div>
+                    <div style="width: 100%; height: 0px;"></div>
+                    <p>Happy my website</p>
+                    <div class="status">
+                        <!-- <div style="width: 100%; height: 0px;"></div>                         -->
+                        <img src="https://i.postimg.cc/9fP8X1ZC/DSC-6956.jpg" alt=""
+                            style="position: relative; bottom: 0px;">
+                    </div>
+                </div>
+                <div class="item round-corner">
+                    <div class="head-feed">
+                        <div class="mini-avatar">
+                            <img src="https://i.postimg.cc/9fP8X1ZC/DSC-6956.jpg" alt="">
+                        </div>
+                        <div class="infor-post">
+                            <span class="name">@Quang_Huy</span>
+                            <div style="width: 100%; height: 0px;"></div>
+                            <span class="time-post">19/06/2022</span>
+                        </div>
+                    </div>
+                    <div style="width: 100%; height: 0px;"></div>
+                    <p>Happy my website</p>
+                    <div class="status">
+                        <!-- <div style="width: 100%; height: 0px;"></div>                         -->
+                        <img src="https://i.postimg.cc/FsfTkh3P/DSC-1081.jpg" alt="DSC-1081" alt=""
+                            style="bottom: 0px;">
+                    </div>
+                </div>
+                <div class="item round-corner">
+                    <div class="head-feed">
+                        <div class="mini-avatar">
+                            <img src="https://i.postimg.cc/9fP8X1ZC/DSC-6956.jpg" alt="">
+                        </div>
+                        <div class="infor-post">
+                            <span class="name">@Quang_Huy</span>
+                            <div style="width: 100%; height: 0px;"></div>
+                            <span class="time-post">19/06/2022</span>
+                        </div>
+                    </div>
+                    <div style="width: 100%; height: 0px;"></div>
+                    <p>Happy my website</p>
+                    <div class="status">
+                        <!-- <div style="width: 100%; height: 0px;"></div>                         -->
+                        <img src="IMG_20200905_124915.jpg" alt="" style="position: relative; bottom: 0px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;"></div>
+        <div class="contact round-corner shadow">
+            <h2>Contact</h2>
+            <div class="list-social-media">
+                <div class="item Fb">
+                    <a target="_blank" href="https://www.facebook.com/chu.huy.020808/">
+                        <img src="https://i.postimg.cc/8zPx026M/facebook-Icon.png" alt="">
+                    </a>
+                </div>
+                <div class="item Ig">
+                    <a target="_blank" href="https://www.instagram.com/q_huy.28/">
+                        <img src="https://i.postimg.cc/x1zph9dk/instagram-Icon.png" alt="">
+                    </a>
+                </div>
+                <div class="item Git">
+                    <a target="_blank" href="https://www.tiktok.com/@qh0208?lang=vi-VN">
+                        <img src="https://i.postimg.cc/851y7WmW/tiktok-Icon.png" alt="">
+                    </a>
+                </div>
+                <div class="item Be">
+                    <a target="_blank" href="https://www.behance.net/chuhuy1">
+                        <img src="https://i.postimg.cc/HxCqBV4s/behance-Icon.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="CONTACT"></div>
+
+    <div class="footer">
+        <!-- <div><span>Design</span>
+            <span>Photo</span>
+            <span>Coding</span>
+            <span>Travel</span>
+            <span>Learn</span>
+        </div> -->
+        <div>
+            <span>Design by Harryguci</span>
+        </div>
+        <div>
+            <span>2022</span>
+        </div>
+    </div>
+</body>
+
+</html>
